@@ -1,0 +1,350 @@
+/*------------------------------------------ Default Formatting ------------------------------------------*/
+body{
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 'Palatino', sans-serif;
+    background-repeat: no-repeat;
+	background-color: rgba(29, 47, 62, 1);
+}
+h1{
+	font-family: Palatino, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 40px;
+    color: black;
+    text-align: center;
+}
+h2{
+	margin-left: 90px;
+	margin-right: 90px;
+}
+p{
+	font-family: Palatino, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 24px;
+	color: black;
+	text-align: left;
+	white-space: pre-line;
+	margin-left: 90px;
+	margin-right: 90px;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+	position: relative;
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+/*Button Darken*/
+li a:hover {
+    background-color: #111;
+}
+a {
+    color: black;
+}
+a:link {
+    text-decoration: none;
+}
+
+a:visited {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a:active {
+    text-decoration: underline;
+}
+/*------------------------------------------ Homepage Formatting ------------------------------------------*/
+/*text format starts*/
+/*homepage format of body*/
+body.homepage{
+	/*background image*/
+	background-image: url("Pictures/CNTowerNightView.jpg");
+	/*image filter; slightly darken*/
+	background-blend-mode: hard-light;
+	/*put background image to fixed position*/
+	background-attachment: fixed;
+	/*move with window when resized*/
+	background-size: cover;
+}
+/*homepage format of heading 1*/
+h1.homepage{
+	color: white;
+	/*text shadow*/
+	text-shadow: 2px 2px 4px #000000;
+	/*specific text size for home page*/
+	font-size: 550%;
+	/*set position fixed to provided location*/
+    position: fixed;
+	/*move down*/
+    top: 30%;
+	/*move right*/
+    width: 99%;
+}
+/*homepage format of paragraph*/
+p.homepage{
+	color: white;
+	/*replace break tag - pre-formatted by switching lines*/
+	white-space: pre-line;
+	/*align text to center*/
+	text-align: center;
+	/*set position fixed to provided location*/
+	position: fixed;
+	/*move down*/
+	top: 50%;
+	/*move right*/
+    width: 99%;
+    line-height: 120%;
+	margin: 0;
+}
+p.homepage span{
+	background-color: rgba(40,46,52, 0.5);
+}
+/*text format ends*/
+/*button format starts*/
+.button {
+	/*set font size*/
+	font-size: 20px;
+	/*set button text color to white*/
+	color: #FFFFFF;
+	/*align button text to center*/
+	text-align: center;
+	/*set background color to transparent light orange*/
+	background-color: rgba(255, 165, 0, 0.7);
+	/*remove border*/
+	border: none;
+	/*smooth border edges*/
+	border-radius: 15px 50px;
+	/*add space between text and border of button*/
+	padding: 15px;
+	/*set button width*/
+	width: 140px;
+	/*set position fixed to provided location*/
+	position: fixed;
+	/*move down*/
+	top: 60%;
+	/*move right*/
+	left: 50%;
+	/*move button to location*/
+	transform: translate(-50%, 50%);
+	/*set transition time*/
+	transition: 0.5s;
+	/*change cursor to .cur	if available else change to default*/
+	cursor: url(Cursors/Plane.cur), pointer;
+}
+.button span {
+	/*change position relative to text*/
+	position: relative;
+	/*change transition time*/
+	transition: 0.5s;
+}
+.button span:after {
+	/*display double arrow*/
+	content: '\00bb';
+	position: absolute;
+	/*hide arrow*/
+	opacity: 0;
+	/*move to right*/
+	right: -20px;
+	transition: 0.5s;
+}
+/*move text*/
+.button:hover span {
+	padding-right: 25px;
+}
+/*display double arrow*/
+.button:hover span:after {
+	opacity: 1;
+	right: 0;
+}
+/*------------------------------------------ World Map Page Formatting ------------------------------------------*/
+body.world, html.world {
+  height: 100%;
+  margin: 0;
+  font: 400 15px/1.8 'Palatino', sans-serif;
+  color: #777;
+}
+
+.style1{
+background-color:rgba(40,46,52, 0.5) ;
+color: white;
+text-align:center;
+padding:15px 10px;
+text-align: justify;
+}
+.style2{
+z-index: -1;
+background-color:#404040;
+color:#000000;
+text-align:center;
+padding:27px 10px;
+text-align: justify;
+}
+.style3{
+background-color:rgba(40,46,52, 0) ;
+color:#FFFFFF;
+text-align:center;
+padding: 9.8% 10%;
+text-align: justify;
+}
+.NiagaraFalls, .StatueOfLiberty, .EiffelTower, .BigBen, .LeaningTowerOfPisa, 
+.GreatWallOfChina, .SydneyOperaHouse, .StBasilsCathedral, .Kilimanjaro, .TajMahal {
+  position: relative;
+  opacity: 1;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+}
+.NiagaraFalls {
+	
+  background-image: url("Pictures/niagarafalls.jpg");
+  min-height: 100%;
+}
+
+
+.StatueOfLiberty {
+  background-image: url("Pictures/StatueOfLiberty.jpg");
+  min-height: 100%;
+}
+
+
+.EiffelTower {
+  background-image: url("Pictures/EiffelTower.jpg");
+  min-height: 100%;
+}
+
+.BigBen {
+  background-image: url("Pictures/BigBen.jpg");
+  min-height: 100%;
+}
+
+.LeaningTowerOfPisa {
+  background-image: url("Pictures/LeaningTowerOfPisa.jpg");
+  min-height: 100%;
+}
+
+.GreatWallOfChina {
+  background-image: url("Pictures/GreatWallOfChina.jpg");
+  min-height: 100%;
+}
+
+.SydneyOperaHouse {
+  background-image: url("Pictures/SydneyOperaHouse.jpg");
+  min-height: 100%;
+}
+
+.StBasilsCathedral {
+  background-image: url("Pictures/StBasilsCathedral.jpg");
+  min-height: 100%;
+}
+
+.Kilimanjaro {
+  background-image: url("Pictures/Kilimanjaro.jpg");
+  min-height: 100%;
+}
+
+.TajMahal {
+  background-image: url("Pictures/TajMahal.jpg");
+  min-height: 100%;
+}
+
+.caption {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #000;
+}
+
+.caption span.border {
+  padding: 18px;
+  font-size: 25px;
+  letter-spacing: 10px;
+}
+/*------------------------------------------ Niagra Falls ------------------------------------------*/
+body.NiagaraFallsPage{
+	background-image: url("Pictures/WaterfallMountain.jpg");
+	background-size: 100%;
+	background-color: #ffcc99;
+}
+/*------------------------------------------ Niagra Falls ------------------------------------------*/
+body.ReferencesPage{
+	background-image: url("Pictures/Gold.jpg");
+	background-repeat: repeat;
+	background-size: 100%;
+	background-color: lightblue;
+}
+
+/*------------------------------------------ Niagra Falls ------------------------------------------*/
+body.Gallery{
+	background-color: lightblue;
+}
+img.Gallery{
+    max-width: 100%;
+    max-height: auto;
+}
+table, th, td {
+   border: 1px solid black;
+}
+
+#quickfindpage{
+	background-color: powderblue
+}
+tbody tr:nth-child(odd) {
+  background-color: #e6e6e6;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #cccccc;
+}
+th {
+	font-size: 2em;
+  background-color:  #999999;
+}
+#quickfindtable{
+	font-size: 1.5em;
+	height: 90%;
+	width: 90%; 
+	margin-left: 5%;
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 25px groove red;
+	font-family: 'Aclonica', serif;
+	padding: 20px;
+	font-style: italic;
+	caption-side: bottom;
+	text-align: center;
+	letter-spacing: 1px;
+	background-color: #fff;
+}
+.landmarkslink{
+	color: white;
+}
+#toplink{
+	color: grey;
+	font-size: 2.5em;
+	font-variant:small-caps;
+	display: block;
+	text-align: center;
+    font-family: 'Aclonica', serif;
+}
+
+
+.horizontalRule{
+	border-bottom: 1px solid #000;
+}

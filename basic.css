@@ -48,9 +48,6 @@ li a {
 li a:hover {
     background-color: #111;
 }
-a {
-    color: black;
-}
 a:link {
     text-decoration: none;
 }
@@ -62,10 +59,25 @@ a:visited {
 a:hover {
     text-decoration: underline;
 }
-
 a:active {
     text-decoration: underline;
 }
+
+a{
+    color: white;
+}
+
+a.quickfindpagelink{
+    color: black;
+}
+a.quickfindpagelink:link {
+	text-decoration: underline;
+}
+
+a.quickfindpagelink:hover {
+	font-weight:bold;
+}
+
 /*------------------------------------------ Homepage Formatting ------------------------------------------*/
 /*text format starts*/
 /*homepage format of body*/
@@ -200,7 +212,7 @@ padding: 9.8% 10%;
 text-align: justify;
 }
 .NiagaraFalls, .StatueOfLiberty, .EiffelTower, .BigBen, .LeaningTowerOfPisa, 
-.GreatWallOfChina, .SydneyOperaHouse, .StBasilsCathedral, .Kilimanjaro, .TajMahal {
+.GreatWallOfChina, .SydneyOperaHouse, .StBasilsCathedral, .MtKilimanjaro, .TajMahal {
   position: relative;
   opacity: 1;
   background-attachment: fixed;
@@ -252,8 +264,8 @@ text-align: justify;
   min-height: 100%;
 }
 
-.Kilimanjaro {
-  background-image: url("Pictures/Kilimanjaro.jpg");
+.MtKilimanjaro {
+  background-image: url("Pictures/MtKilimanjaro.jpg");
   min-height: 100%;
 }
 
@@ -276,13 +288,67 @@ text-align: justify;
   font-size: 25px;
   letter-spacing: 10px;
 }
-/*------------------------------------------ Niagra Falls ------------------------------------------*/
+/*------------------------------------------ Niagara Falls ------------------------------------------*/
 body.NiagaraFallsPage{
 	background-image: url("Pictures/WaterfallMountain.jpg");
 	background-size: 100%;
 	background-color: #ffcc99;
 }
-/*------------------------------------------ Niagra Falls ------------------------------------------*/
+/*------------------------------------------ Statue Of Liberty ------------------------------------------*/
+body.StatueOfLibertyPage{
+	background-image: url("Pictures/StatueOfLibertyLowPoly.jpg");
+	background-size: 100%;
+	background-color: #C0C0C0;
+}
+/*------------------------------------------ Eiffel Tower ------------------------------------------*/
+body.EiffelTowerPage{
+	background-image: url("Pictures/EiffelTowerLowPoly.jpg");
+	background-size: 100%;
+	background-color: #FFE4B5;
+}
+/*------------------------------------------ Big Ben ------------------------------------------*/
+body.BigBenPage{
+	background-image: url("Pictures/BigBenPageBackground.jpg");
+	background-size: 100%;
+	background-color: #E6E6FA;
+}
+/*------------------------------------------ Leaning Tower Of Pisa ------------------------------------------*/
+body.LeaningTowerofPisaPage{
+	background-image: url("Pictures/LeaningTowerOfPisaPageBackground.jpg");
+	background-size: 100%;
+	background-color: #8aacb8;
+}
+/*------------------------------------------ Great Wall Of China ------------------------------------------*/
+body.GreatWallofChinaPage{
+	background-image: url("Pictures/GreatWallOfChinaPageBackground.jpg");
+	background-size: 100%;
+	background-color: #b2d8b2;
+}
+/*------------------------------------------ Sydney Opera House ------------------------------------------*/
+body.SydneyOperaHousePage{
+	background-image: url("Pictures/SydneyOperaHousePageBackground.jpg");
+	background-size: 100%;
+	background-color: #c5e3ed;
+}
+/*------------------------------------------ St. Basil's Cathedral ------------------------------------------*/
+body.StBasilsCathedralPage{
+	background-image: url("Pictures/StBasilsCathedralPageBackground.jpg");
+	background-size: 100%;
+	background-color: #e1c8af;
+}
+/*------------------------------------------ Mt. Kilimanjaro ------------------------------------------*/
+body.MtKilimanjaroPage{
+	background-image: url("Pictures/MtKilimanjaroPageBackground.jpg");
+	background-size: 100%;
+	background-color: #e1c8af;
+}
+/*------------------------------------------ Taj Mahal ------------------------------------------*/
+body.TajMahalPage{
+	background-image: url("Pictures/TajMahalPageBackground.jpg");
+	background-size: 100%;
+	background-color: #d2cfcf;
+}
+/*------------------------------------------ Niagara Falls ------------------------------------------*/
 body.ReferencesPage{
 	background-image: url("Pictures/Gold.jpg");
 	background-repeat: repeat;
@@ -290,7 +356,7 @@ body.ReferencesPage{
 	background-color: lightblue;
 }
 
-/*------------------------------------------ Niagra Falls ------------------------------------------*/
+/*------------------------------------------ Niagara Falls ------------------------------------------*/
 body.Gallery{
 	background-color: lightblue;
 }
@@ -343,8 +409,6 @@ th {
 	text-align: center;
     font-family: 'Aclonica', serif;
 }
-
-
 .horizontalRule{
 	border-bottom: 1px solid #000;
 }

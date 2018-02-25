@@ -1,11 +1,15 @@
 <!DOCTYPE html>
-<html>
+<!-- Specify the language -->
+<html lang="en">
+	<!-- Head information like charset, tittle, and link to css -->
 	<head>
 		<meta charset="UTF-8">
 		<title>Gallery</title>
 		<link rel="stylesheet" type="text/css" href="basic.css">
 	</head>
-	<body class = "Gallery">
+	<!-- Content -->
+	<body class = "Gallery" id="top">
+		<!-- Navigation bar -->
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="landmarks.html">Landmarks</a></li>
@@ -13,23 +17,37 @@
 			<li><a href="quickfind.html">Quick Find</a></li>
 			<li><a href="references.html">References</a></li>
 		</ul>
+		<!-- Dark rectangle behind navigation bar -->
 		<div class = "style2"></div>
-		<h1>Gallery</h1>
 
-		<img class = "Gallery" src="Pictures/MoraineLakeAlberta.jpg" height="100%" width="100%" alt="Picture of Lake Moraine with mountains in the back and trees on the side." />
+		<h1>Gallery</h1>
+		<!-- Moraine Lake Alberta -->
+		<img class = "Gallery" src="Pictures/MoraineLakeAlberta.jpg" height="1200" width="1920" alt="Picture of Lake Moraine with mountains in the back and trees on the side." />
 		<p>Moraine Lake, Alberta, Canada</p>
 
-		<img class = "Gallery" src="Pictures/MarSabaMonasteryIsrael.jpg" alt="Picture of Mar Saba Monastery on a sunny day with few clouds." />
+		<!-- Mar Saba Monastery Israel -->
+		<img class = "Gallery" src="Pictures/MarSabaMonasteryIsrael.jpg" height="1200" width="1920" alt="Picture of Mar Saba Monastery on a sunny day with few clouds." />
 		<p>Mar Saba Monastery, Israel</p>
 
-		<img class = "Gallery" src="Pictures/RothenburgObDerTauberGermany.jpg" alt="Picture of the town Rothenburg ob der Tauber with houses on the side of a street and and arc with a clock in front." />
-		<p>Rothenburg Ob Der Tauber, Germany</p>
+		<!-- Rothenburg ob der Tauber Germany -->
+		<img class = "Gallery" src="Pictures/RothenburgObDerTauberGermany.jpg" height="1200" width="1920" alt="Picture of the town Rothenburg ob der Tauber with houses on the side of a street and and arc with a clock in front." />
+		<p>Rothenburg ob der Tauber, Germany</p>
 
-		<img class = "Gallery" src="Pictures/WestPalmBeachUSA.jpg" alt="Picture of West Palm Beach with two buildings at the back and bridge with a body of water in front" />
+		<!-- West Palm Beach USA -->
+		<img class = "Gallery" src="Pictures/WestPalmBeachUSA.jpg" height="1200" width="1920" alt="Picture of West Palm Beach with two buildings at the back and bridge with a body of water in front" />
 		<p>West Palm Beach, United States of America</p>
 
+		<!-- Make a horizontal rule with only css by using a div class -->
+		<div class = "horizontalRule"></div>
+		<!-- Back to top link -->
+		<p class="toplink">Back to <a class="toplink" href="#top">Top</a></p>
+		<!-- Another horizontal rule -->
+		<div class = "horizontalRule"></div>
+		<!-- Validator link -->
 		<a href="http://validator.w3.org/check?uri=https://zhang-vincent.github.io/home/gallery.html">
 			<img class="semantics" src="Pictures/html5Css3Semantics.jpg" width="165" height="64" alt="HTML5 with CSS3 and Semantics">
 		</a>
+		<!-- Declaring copyright and using the copy special symbol -->
+		<p class="copyright">Copyright &copy; 2018 Vincent Zhang. All rights reserved.</p>
 	</body>
 </html>

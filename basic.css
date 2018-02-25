@@ -7,21 +7,22 @@ body{
 	background-color: rgba(29, 47, 62, 1);
 }
 h1{
-	font-family: Palatino, 'Merienda One', Helvetica, sans-serif;	
+	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
     font-size: 40px;
     color: black;
     text-align: center;
 }
-h2{
+h2, h3, h4{
+	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 32px;
 	margin-left: 90px;
 	margin-right: 90px;
 }
 p{
-	font-family: Palatino, 'Merienda One', Helvetica, sans-serif;	
-    font-size: 24px;
+	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 30px;
 	color: black;
 	text-align: left;
-	white-space: pre-line;
 	margin-left: 90px;
 	margin-right: 90px;
 }
@@ -93,6 +94,8 @@ body.homepage{
 }
 /*homepage format of heading 1*/
 h1.homepage{
+	font-family: Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 40px;
 	color: white;
 	/*text shadow*/
 	text-shadow: 2px 2px 4px #000000;
@@ -107,6 +110,8 @@ h1.homepage{
 }
 /*homepage format of paragraph*/
 p.homepage{
+	font-family: Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
+    font-size: 24px;
 	color: white;
 	/*replace break tag - pre-formatted by switching lines*/
 	white-space: pre-line;
@@ -350,7 +355,7 @@ body.TajMahalPage{
 }
 /*------------------------------------------ Niagara Falls ------------------------------------------*/
 body.ReferencesPage{
-	background-image: url("Pictures/Gold.jpg");
+	background-image: url("Pictures/Gold.jpgsdf");
 	background-repeat: repeat;
 	background-size: 100%;
 	background-color: lightblue;
@@ -361,7 +366,8 @@ body.Gallery{
 	background-color: lightblue;
 }
 img.Gallery{
-    max-width: 100%;
+	margin-left: 5%;
+    max-width: 90%;
     max-height: auto;
 }
 table, th, td {
@@ -379,7 +385,7 @@ tbody tr:nth-child(even) {
   background-color: #cccccc;
 }
 th {
-	font-size: 2em;
+	font-size: 1.6em;
   background-color:  #999999;
 }
 #quickfindtable{
@@ -389,7 +395,7 @@ th {
 	margin-left: 5%;
 	table-layout: fixed;
 	border-collapse: collapse;
-	border: 25px groove red;
+	border: 25px groove grey;
 	font-family: 'Aclonica', serif;
 	padding: 20px;
 	font-style: italic;
@@ -401,14 +407,47 @@ th {
 .landmarkslink{
 	color: white;
 }
-#toplink{
-	color: grey;
-	font-size: 2.5em;
+a.toplink{
+	color: #A8A8A8;
+	font-size: 1em;
 	font-variant:small-caps;
-	display: block;
 	text-align: center;
     font-family: 'Aclonica', serif;
 }
+p.toplink{
+	 color: grey;
+	font-size: 2.5em;
+	font-variant:small-caps;
+	text-align: center;
+    font-family: 'Aclonica', serif;
+	background-color: rgba(255, 255, 255, 0.4);
+}
 .horizontalRule{
 	border-bottom: 1px solid #000;
+}
+.semantics{
+	margin-top: 2%;
+	margin-left: 45%;
+}
+.copyright{
+	font-size: 10pt;
+}
+img.SLPageImage{
+	margin-left: 40%;
+}
+p.SLPageImage{
+	margin-left: 37%;
+	margin-right: 30%;
+	font-size: 24px;
+}
+img.OPageImage{
+	margin-left: 23%;
+}
+p.OPageImage{
+	margin-left: 37%;
+	margin-right: 30%;
+	font-size: 24px;
+}
+.video{
+	z-index: 999;
 }

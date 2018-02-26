@@ -49,6 +49,7 @@ li a {
 li a:hover {
 	background-color: #111;
 }
+/* Remove underline */
 a:link {
 	text-decoration: none;
 }
@@ -106,7 +107,7 @@ h1.homepage{
     position: fixed;
 	/*move down*/
     top: 30%;
-	/*move right*/
+	/*increase width rightwards*/
     width: 99%;
 }
 /*homepage format of paragraph*/
@@ -122,7 +123,7 @@ p.homepage{
 	position: fixed;
 	/*move down*/
 	top: 50%;
-	/*move right*/
+	/*increase width rightwards*/
     width: 99%;
     line-height: 120%;
 	margin: 0;
@@ -153,7 +154,7 @@ p.homepage span{
 	position: fixed;
 	/*move down*/
 	top: 60%;
-	/*move right*/
+	/*move 50% from the left*/
 	left: 50%;
 	/*move button to location*/
 	transform: translate(-50%, 50%);
@@ -190,7 +191,7 @@ p.homepage span{
 img.homepage{
 	/*move down*/
 	top: 90%;
-	/*move right*/
+	/*move 47.2% from the left*/
 	left: 47.2%;
 	position: fixed;
 	color: black;
@@ -201,7 +202,7 @@ p.copyrighthome{
 	font-size: 15px;
 	/*move down*/
 	top: 94%;
-	/*move right*/
+	/*move -3% from the left*/
 	left: -3%;
 	position: fixed;
 }
@@ -212,7 +213,7 @@ body.world, html.world {
 	font: 400 15px/1.8 'Palatino', sans-serif;
 	color: #777;
 }
-
+/* used on landmark page */
 .style1{
 	background-color:rgba(40,46,52, 0.5) ;
 	color: white;
@@ -221,6 +222,7 @@ body.world, html.world {
 	text-align: center;
 	display: inline-block;
 }
+/* creates dark bar behind navigation list */
 .style2{
 	z-index: -1;
 	background-color:#404040;
@@ -229,13 +231,25 @@ body.world, html.world {
 	padding:27px 10px;
 	text-align: justify;
 }
-.style3{
-	background-color:rgba(40,46,52, 0) ;
-	color:#FFFFFF;
-	text-align:center;
-	padding: 9.8% 10%;
-	text-align: justify;
+.caption {
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
 }
+/* styles text on the landmarks page*/
+.caption span.border {
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
+}
+/* styles the link */
+.landmarkslink{
+	color: white;
+}
+/*------------------------------------------ World landmarks pages formatting ------------------------------------------*/
 .NiagaraFalls, .StatueOfLiberty, .EiffelTower, .BigBen, .LeaningTowerOfPisa, 
 .GreatWallOfChina, .SydneyOperaHouse, .StBasilsCathedral, .MtKilimanjaro, .TajMahal {
 	position: relative;
@@ -245,72 +259,65 @@ body.world, html.world {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
+/* Used on all of the world landmarks pages to push text down from the image*/
+.style3{
+	background-color:rgba(40,46,52, 0) ;
+	color:#FFFFFF;
+	text-align:center;
+	padding: 9.8% 10%;
+	text-align: justify;
+}
+/* Formatting below specifies the images in the parallax scrolling*/
 .NiagaraFalls {
 	background-image: url("Pictures/NiagaraFalls.jpg");
 	min-height: 100%;
 }
-
-
 .StatueOfLiberty {
 	background-image: url("Pictures/StatueOfLiberty.jpg");
 	min-height: 100%;
 }
-
-
 .EiffelTower {
 	background-image: url("Pictures/EiffelTower.jpg");
 	min-height: 100%;
 }
-
 .BigBen {
 	background-image: url("Pictures/BigBen.jpg");
 	min-height: 100%;
 }
-
 .LeaningTowerOfPisa {
 	background-image: url("Pictures/LeaningTowerOfPisa.jpg");
 	min-height: 100%;
 }
-
 .GreatWallOfChina {
 	background-image: url("Pictures/GreatWallOfChina.jpg");
 	min-height: 100%;
 }
-
 .SydneyOperaHouse {
 	background-image: url("Pictures/SydneyOperaHouse.jpg");
 	min-height: 100%;
 }
-
 .StBasilsCathedral {
 	background-image: url("Pictures/StBasilsCathedral.jpg");
 	min-height: 100%;
 }
-
 .MtKilimanjaro {
 	background-image: url("Pictures/MtKilimanjaro.jpg");
 	min-height: 100%;
 }
-
 .TajMahal {
 	background-image: url("Pictures/TajMahal.jpg");
 	min-height: 100%;
 }
-
-.caption {
-	position: absolute;
-	left: 0;
-	top: 50%;
-	width: 100%;
-	text-align: center;
-	color: #000;
+/* change image and caption styling in St. Basil's Cathedral Page and Sydney Opera House Page */
+img.OPageImage{
+	margin-left: 30%;
 }
-
-.caption span.border {
-	padding: 18px;
-	font-size: 25px;
-	letter-spacing: 10px;
+p.OPageImage{
+	margin-left: 38%;
+	margin-right: 30%;
+	font-size: 24px;
 }
+/*------------------------------------------ Separate landmarks pages ------------------------------------------*/
 /*------------------------------------------ Niagara Falls ------------------------------------------*/
 body.NiagaraFallsPage{
 	background-image: url("Pictures/WaterfallMountain.jpg");
@@ -322,6 +329,14 @@ body.StatueOfLibertyPage{
 	background-image: url("Pictures/StatueOfLibertyLowPoly.jpg");
 	background-size: 100%;
 	background-color: #C0C0C0;
+}
+img.SLPageImage{
+	margin-left: 40%;
+}
+p.SLPageImage{
+	margin-left: 37%;
+	margin-right: 30%;
+	font-size: 24px;
 }
 /*------------------------------------------ Eiffel Tower ------------------------------------------*/
 body.EiffelTowerPage{
@@ -412,7 +427,7 @@ img.Gallery{
 table, th, td {
 	border: 1px solid black;
 }
-
+/*------------------------------------------ Quick Find ------------------------------------------*/
 #quickfindpage{
 	background-color: powderblue
 }
@@ -443,9 +458,7 @@ th {
 	letter-spacing: 1px;
 	background-color: #fff;
 }
-.landmarkslink{
-	color: white;
-}
+/*------------------------------------------ formmats for return to top link ------------------------------------------*/
 a.toplink, a.toplinkdark{
 	color: rgb(60, 60, 60);
 	font-size: 1em;
@@ -458,7 +471,7 @@ p.toplink, p.toplinkdark{
 	font-size: 2.5em;
 	font-variant:small-caps;
 	text-align: center;
-    font-family: 'Aclonica', serif;
+	font-family: 'Aclonica', serif;
 	background-color: rgba(255, 255, 255, 0.2);
 }
 a.toplinkdark{
@@ -468,9 +481,12 @@ p.toplinkdark{
 	color: white;
 	background-color: transparent;
 }
+/*------------------------------------------ Separate Styling ------------------------------------------*/
+/* add thin border to make horizontal rule effect */
 .horizontalRule{
 	border-bottom: 1px solid #000;
 }
+/* Html 5 and CSS 3 display button/link formats */
 .semantics{
 	margin-top: 2%;
 	margin-left: 46.5%;
@@ -481,26 +497,11 @@ p.toplinkdark{
 	text-align: center;
 	display: inline-block;
 }
+/* copyright link format */
 .copyright{
 	font-size: 15pt;
 }
 .copyrightdark{
 	font-size: 15pt;
 	color: white;
-}
-img.SLPageImage{
-	margin-left: 40%;
-}
-p.SLPageImage{
-	margin-left: 37%;
-	margin-right: 30%;
-	font-size: 24px;
-}
-img.OPageImage{
-	margin-left: 30%;
-}
-p.OPageImage{
-	margin-left: 38%;
-	margin-right: 30%;
-	font-size: 24px;
 }

@@ -1,16 +1,16 @@
 /*------------------------------------------ Default Formatting ------------------------------------------*/
 body{
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 'Palatino', sans-serif;
-    background-repeat: no-repeat;
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 'Palatino', sans-serif;
+	background-repeat: no-repeat;
 	background-color: rgba(29, 47, 62, 1);
 }
 h1{
 	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
-    font-size: 40px;
-    color: black;
-    text-align: center;
+	font-size: 40px;
+	color: black;
+	text-align: center;
 }
 h2, h3, h4{
 	font-family: 'Goudy Old Style', Palatino, Aclonica, 'Merienda One', Helvetica, sans-serif;	
@@ -28,48 +28,48 @@ p{
 }
 
 ul{
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 }
 
 li {
 	position: relative;
-    float: left;
+	float: left;
 }
 
 li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
 }
 /*Button Darken*/
 li a:hover {
-    background-color: #111;
+	background-color: #111;
 }
 a:link {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:visited {
-    text-decoration: none;
+	text-decoration: none;
 }
 
 a:hover {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 a:active {
-    text-decoration: underline;
+	text-decoration: underline;
 }
 
 a{
-    color: white;
+	color: white;
 }
 
 a.quickfindpagelink{
-    color: black;
+	color: black;
 }
 a.quickfindpagelink:link {
 	text-decoration: underline;
@@ -205,113 +205,111 @@ p.copyrighthome{
 	left: -3%;
 	position: fixed;
 }
-/*------------------------------------------ World Map Page Formatting ------------------------------------------*/
+/*------------------------------------------ Landmarks Page Formatting ------------------------------------------*/
 body.world, html.world {
-  height: 100%;
-  margin: 0;
-  font: 400 15px/1.8 'Palatino', sans-serif;
-  color: #777;
+	height: 100%;
+	margin: 0;
+	font: 400 15px/1.8 'Palatino', sans-serif;
+	color: #777;
 }
 
 .style1{
-background-color:rgba(40,46,52, 0.5) ;
-color: white;
-text-align:center;
-padding: 5px 10px;
-text-align: center;
-display: inline-block;
+	background-color:rgba(40,46,52, 0.5) ;
+	color: white;
+	text-align:center;
+	padding: 5px 10px;
+	text-align: center;
+	display: inline-block;
 }
 .style2{
-z-index: -1;
-background-color:#404040;
-color:#000000;
-text-align:center;
-padding:27px 10px;
-text-align: justify;
+	z-index: -1;
+	background-color:#404040;
+	color:#000000;
+	text-align:center;
+	padding:27px 10px;
+	text-align: justify;
 }
 .style3{
-background-color:rgba(40,46,52, 0) ;
-color:#FFFFFF;
-text-align:center;
-padding: 9.8% 10%;
-text-align: justify;
+	background-color:rgba(40,46,52, 0) ;
+	color:#FFFFFF;
+	text-align:center;
+	padding: 9.8% 10%;
+	text-align: justify;
 }
 .NiagaraFalls, .StatueOfLiberty, .EiffelTower, .BigBen, .LeaningTowerOfPisa, 
 .GreatWallOfChina, .SydneyOperaHouse, .StBasilsCathedral, .MtKilimanjaro, .TajMahal {
-  position: relative;
-  opacity: 1;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
+	position: relative;
+	opacity: 1;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 .NiagaraFalls {
-	
-  background-image: url("Pictures/NiagaraFalls.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/NiagaraFalls.jpg");
+	min-height: 100%;
 }
 
 
 .StatueOfLiberty {
-  background-image: url("Pictures/StatueOfLiberty.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/StatueOfLiberty.jpg");
+	min-height: 100%;
 }
 
 
 .EiffelTower {
-  background-image: url("Pictures/EiffelTower.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/EiffelTower.jpg");
+	min-height: 100%;
 }
 
 .BigBen {
-  background-image: url("Pictures/BigBen.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/BigBen.jpg");
+	min-height: 100%;
 }
 
 .LeaningTowerOfPisa {
-  background-image: url("Pictures/LeaningTowerOfPisa.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/LeaningTowerOfPisa.jpg");
+	min-height: 100%;
 }
 
 .GreatWallOfChina {
-  background-image: url("Pictures/GreatWallOfChina.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/GreatWallOfChina.jpg");
+	min-height: 100%;
 }
 
 .SydneyOperaHouse {
-  background-image: url("Pictures/SydneyOperaHouse.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/SydneyOperaHouse.jpg");
+	min-height: 100%;
 }
 
 .StBasilsCathedral {
-  background-image: url("Pictures/StBasilsCathedral.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/StBasilsCathedral.jpg");
+	min-height: 100%;
 }
 
 .MtKilimanjaro {
-  background-image: url("Pictures/MtKilimanjaro.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/MtKilimanjaro.jpg");
+	min-height: 100%;
 }
 
 .TajMahal {
-  background-image: url("Pictures/TajMahal.jpg");
-  min-height: 100%;
+	background-image: url("Pictures/TajMahal.jpg");
+	min-height: 100%;
 }
 
 .caption {
-  position: absolute;
-  left: 0;
-  top: 50%;
-  width: 100%;
-  text-align: center;
-  color: #000;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 100%;
+	text-align: center;
+	color: #000;
 }
 
 .caption span.border {
-  padding: 18px;
-  font-size: 25px;
-  letter-spacing: 10px;
+	padding: 18px;
+	font-size: 25px;
+	letter-spacing: 10px;
 }
 /*------------------------------------------ Niagara Falls ------------------------------------------*/
 body.NiagaraFallsPage{
@@ -409,26 +407,25 @@ body.Gallery{
 }
 img.Gallery{
 	margin-left: 5%;
-    max-width: 90%;
-    max-height: auto;
+	max-width: 90%;
 }
 table, th, td {
-   border: 1px solid black;
+	border: 1px solid black;
 }
 
 #quickfindpage{
 	background-color: powderblue
 }
 tbody tr:nth-child(odd) {
-  background-color: #e6e6e6;
+	background-color: #e6e6e6;
 }
 
 tbody tr:nth-child(even) {
-  background-color: #cccccc;
+	background-color: #cccccc;
 }
 th {
 	font-size: 1.6em;
-  background-color:  #999999;
+	background-color:  #999999;
 }
 #quickfindtable{
 	font-size: 1.5em;
